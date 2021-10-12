@@ -15,7 +15,9 @@ https://github.com/kyivstarteam/ks-react-design-system-public/packages/
 //npm.pkg.github.com/:_authToken=${TOKEN}
 ````
 **Note:** make sure that `.npmrc` file is added to `.gitignore`
+
 6. Execuce following in your terminal:
+
 ```
 npm install @kyivstarteam/ks-react-design-system-public
 ```
