@@ -14,6 +14,8 @@ https://github.com/kyivstarteam/ks-react-design-system-public/packages/
 @kyivstarteam:registry=https://npm.pkg.github.com
 //npm.pkg.github.com/:_authToken=${TOKEN}
 ````
+where `${TOKEN}` is the token you copied in step 4
+
 **Note:** make sure that `.npmrc` file is added to `.gitignore`
 
 6. Execuce following in your terminal:
