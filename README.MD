@@ -4,7 +4,7 @@ https://github.com/kyivstarteam/ks-react-design-system-public/packages/
 ### Comprehensive installation guide
 https://zeroheight.com/1d5a833eb/p/41f267--installation-guide
 
-### Installing design system with GitHub regisrty
+### Setting up GitHub registry
 
 1. In GitHub navigate to https://github.com/settings/tokens (Settings > Developer settings > Personal access tokens) and you should see something like this:
 ![](https://i.stack.imgur.com/nJ9g7.png)
@@ -19,9 +19,9 @@ https://zeroheight.com/1d5a833eb/p/41f267--installation-guide
 ````
 where `${TOKEN}` is the token you copied in step 4
 
-**Note:** make sure that `.npmrc` file is added to `.gitignore`
+**Note:** make sure that `.npmrc` file is added to `.gitignore`, as it contains sensitive data. Consider using env variables for the token management. 
 
-6. Execuce following in your terminal:
+6. Install the package from the terminal:
 
 ```shell
 npm install @kyivstarteam/ks-react-design-system-public
