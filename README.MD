@@ -1,7 +1,10 @@
-# Releases of the disign system are available in packages
+### Releases of the disign system are available in packages
 https://github.com/kyivstarteam/ks-react-design-system-public/packages/
 
-# How to add design system to your project
+### Comprehensive installation guide
+https://zeroheight.com/1d5a833eb/p/41f267--installation-guide
+
+### Installing design system with GitHub regisrty
 
 1. In GitHub navigate to https://github.com/settings/tokens (Settings > Developer settings > Personal access tokens) and you should see something like this:
 ![](https://i.stack.imgur.com/nJ9g7.png)
@@ -20,10 +23,10 @@ where `${TOKEN}` is the token you copied in step 4
 
 6. Execuce following in your terminal:
 
-```
+```shell
 npm install @kyivstarteam/ks-react-design-system-public
 ```
 Or this if you use `Yarn`:
-```
+```shell
 yarn add @kyivstarteam/ks-react-design-system-public
 ```
