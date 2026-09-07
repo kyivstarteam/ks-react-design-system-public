@@ -21,7 +21,7 @@ actually need names, and lets them decide **when** it is loaded.
 Nothing to configure, fully tree-shaken, type-checked:
 
 ```tsx
-import CloseIcon from 'ks-react-design-system/assets/CloseIcon'
+import CloseIcon from 'ks-react-design-system-public/assets/CloseIcon'
 
 <Button iconRightComponent={<CloseIcon />} />
 ```
@@ -32,7 +32,7 @@ One-line restore of the previous behaviour — eager, the whole set lands in you
 main chunk. Fine as a migration step:
 
 ```tsx
-import RenderIconByNameContextProvider from 'ks-react-design-system/Contexts/RenderIconByName/RenderIconByNameContextProvider'
+import RenderIconByNameContextProvider from 'ks-react-design-system-public/Contexts/RenderIconByName/RenderIconByNameContextProvider'
 
 <RenderIconByNameContextProvider>
   <App />
@@ -44,7 +44,7 @@ icon:
 
 ```tsx
 const CompleteSvgIconsByName = React.lazy(
-  () => import('ks-react-design-system/Components/SvgIcon/experimental/CompleteSvgIconsByName'),
+  () => import('ks-react-design-system-public/Components/SvgIcon/experimental/CompleteSvgIconsByName'),
 )
 
 const iconRegistry = {
@@ -96,13 +96,13 @@ Wrap your app to enable rendering icons by name:
 
 ```tsx
 import React from 'react'
-import RenderIconByNameContext from 'ks-react-design-system/Contexts/RenderIconByName/RenderIconByNameContext'
+import RenderIconByNameContext from 'ks-react-design-system-public/Contexts/RenderIconByName/RenderIconByNameContext'
 // `baseRenderIcon` includes icons from the SvgIcon component and will be used to render previously available icons
-import { renderIcon as baseRenderIcon } from 'ks-react-design-system/Components/SvgIcon/renderIcon'
+import { renderIcon as baseRenderIcon } from 'ks-react-design-system-public/Components/SvgIcon/renderIcon'
 
 // This component is large and will be lazy-loaded only when `baseRenderIcon` doesn't find the provided icon name
 const CompleteSvgIconsByName = React.lazy(
-  () => import('ks-react-design-system/Components/SvgIcon/experimental/CompleteSvgIconsByName')
+  () => import('ks-react-design-system-public/Components/SvgIcon/experimental/CompleteSvgIconsByName')
 )
 
 export default function App() {
@@ -129,7 +129,7 @@ export default function App() {
 
 ```tsx
 import React from 'react'
-import RenderCompleteIconsByNameContextProvider from 'ks-react-design-system/Contexts/RenderIconByName/RenderCompleteIconsByNameContextProvider'
+import RenderCompleteIconsByNameContextProvider from 'ks-react-design-system-public/Contexts/RenderIconByName/RenderCompleteIconsByNameContextProvider'
 
 export default function App() {
   return (

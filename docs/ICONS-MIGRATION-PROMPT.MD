@@ -9,7 +9,7 @@ root of a consumer project. It migrates the project off string icon names,
 ````markdown
 # Task: migrate off KDS string icons, `SvgIcon`, and deprecated icon props
 
-This project consumes `ks-react-design-system` (KDS). Icons are now plain React
+This project consumes `ks-react-design-system-public` (KDS). Icons are now plain React
 components. Migrate all call sites.
 
 **Naming an icon with a string is an antipattern and must be avoided.** A string
